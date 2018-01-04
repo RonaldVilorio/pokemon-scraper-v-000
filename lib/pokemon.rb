@@ -1,12 +1,13 @@
 require 'pry'
 class Pokemon
-  attr_accessor :id,:name,:type,:db
+  attr_accessor :id,:name,:type,:db,:hp
 
   def initialize(id=nil,name=nil,type=nil,db=nil,hp=nil)
     @id = id
     @name = name
     @type = type
     @db = db
+    @hp = hp
   end
 
   def self.save(name,type,db)
@@ -17,7 +18,7 @@ class Pokemon
     pokemon = pokemon.flatten
     Pokemon.new(pokemon[0],pokemon[1],pokemon[2])
   end
-  
+
 
 
 end
