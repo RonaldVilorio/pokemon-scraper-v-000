@@ -17,7 +17,7 @@ class Pokemon
     pokemon = pokemon.flatten
     Pokemon.new(pokemon[0],pokemon[1],pokemon[2])
   end
-  
+
 
 
 end
