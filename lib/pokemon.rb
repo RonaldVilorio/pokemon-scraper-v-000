@@ -6,6 +6,7 @@ class Pokemon
     attributes.each{|key,value| self.send("#{key}=",value)}
     # binding.pry
   end
+  def initialize(id=nil,name=nil,type=nil,db=nil)
 
   def self.save(name,type,db)
     db.execute("INSERT INTO pokemon (name,type) VALUES (?, ?)",name,type)
