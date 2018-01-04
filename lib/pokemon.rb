@@ -1,6 +1,6 @@
 require 'pry'
 class Pokemon
-  attr_accessor :id,:name,:type,:db,:hp
+  attr_accessor :id,:name,:type,:db
 
   def initialize(id=nil,name=nil,type=nil,db=nil,hp=nil)
     @id = id
