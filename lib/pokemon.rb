@@ -7,6 +7,7 @@ class Pokemon
     # binding.pry
   end
   def initialize(id=nil,name=nil,type=nil,db=nil)
+  end
 
   def self.save(name,type,db)
     db.execute("INSERT INTO pokemon (name,type) VALUES (?, ?)",name,type)
