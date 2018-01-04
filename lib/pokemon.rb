@@ -20,7 +20,7 @@ class Pokemon
     pokemon = db.execute("SELECT * FROM pokemon WHERE id = (?)",id)
     pokemon = pokemon.flatten
 
-    binding.pry
+    # binding.pry
     Pokemon.new(pokemon[0],pokemon[1],pokemon[2])
 
   end
