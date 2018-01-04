@@ -1,1 +1,2 @@
+DROP TABLE pokemon
 ALTER TABLE pokemon ADD hp INTEGER DEFAULT 60;
