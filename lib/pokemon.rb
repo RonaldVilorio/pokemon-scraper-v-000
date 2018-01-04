@@ -20,7 +20,7 @@ class Pokemon
     Pokemon.new(pokemon[0],pokemon[1],pokemon[2],pokemon[3])
     # binding.pry
   end
-  def alter_hp(hp)
+  def alter_hp(id,hp)
 
   end
 
