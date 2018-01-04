@@ -1,7 +1,7 @@
 require 'pry'
 class Pokemon
   attr_accessor :id,:name,:type,:db
-  
+
   def initialize(id=nil,name=nil,type=nil,db=nil)
     @id = id
     @name = name
@@ -15,8 +15,6 @@ class Pokemon
   def self.find(id,db)
     pokemon = db.execute("SELECT * FROM pokemon WHERE id = (?)",id)
     pokemon = pokemon.flatten
-
-    # binding.pry
     Pokemon.new(pokemon[0],pokemon[1],pokemon[2])
 
   end
