@@ -2,7 +2,7 @@ require 'pry'
 class Pokemon
   attr_accessor :id,:name,:type,:db
 
-  def initialize(id=nil,name=nil,type=nil,db=nil)
+  def initialize(id=nil,name=nil,type=nil,db=nil,hp=nil)
     @id = id
     @name = name
     @type = type
@@ -17,6 +17,7 @@ class Pokemon
     pokemon = pokemon.flatten
     Pokemon.new(pokemon[0],pokemon[1],pokemon[2])
   end
+  
 
 
 end
